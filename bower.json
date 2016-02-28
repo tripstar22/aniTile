@@ -1,0 +1,9 @@
+{
+  "name": "bower-components",
+  "version": "0.0.1",
+  "dependencies": {
+    "Ionicons": "ionicons#~2.0.1",
+    "angular": "1.4.6",
+    "angulargrid": "^0.5.3"
+  }
+}

@@ -1,0 +1,50 @@
+
+/*=============================
+=            FONTS            =
+=============================*/
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:700,800);
+
+@import "../bower-components/ionicons/scss/ionicons";
+
+/*-----  End of FONTS  ------*/
+
+
+/*============================================
+=            TOP-LEVEL SCSS FILES            =
+============================================*/
+
+// Import variables used in foundationVars before importing foundationVars
+@import "vars/colors";
+
+/*=====  End of TOP-LEVEL SCSS FILES  ======*/
+
+
+/*=================================
+=            VARIABLES            =
+==================================*/
+
+@import
+	"vars/global";
+
+/*-----  End of VARIABLES  ------*/
+
+
+/*==============================
+=            MIXINS            =
+==============================*/
+
+@import
+  	"mixins/borderRadius";
+
+/*-----  End of MIXINS  ------*/
+
+
+/*=======================================
+=            CUSTOM PARTIALS            =
+=======================================*/
+
+@import
+	"partials/main";
+
+/*-----  End of CUSTOM PARTIALS  ------*/
