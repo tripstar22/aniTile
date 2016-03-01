@@ -2987,24 +2987,32 @@
   width: 94%;
   padding: 5% 0;
   margin: 0 3%; }
-  .wrap .grid {
-    border: 1px solid #cccccc;
+
+.dynamic-grid {
+  position: relative; }
+  .dynamic-grid.angular-grid {
+    display: block; }
+  .dynamic-grid .grid {
+    position: absolute;
     list-style: none;
     background: #ffffff;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out; }
-    .wrap .grid .grid-img {
-      width: 100%;
-      vertical-align: middle;
-      -webkit-transition: opacity 0.6s ease-out;
-      transition: opacity 0.6s ease-out;
-      background-color: #fff;
-      opacity: 0;
-      visibility: hidden; }
-      .wrap .grid .grid-img.img-loaded {
-        visibility: visible;
-        opacity: 1; }
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    overflow: hidden;
+    border-radius: 10px; }
+  .dynamic-grid .grid-img {
+    width: 100%;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden; }
+    .dynamic-grid .grid-img.img-loaded {
+      visibility: visible;
+      opacity: 1; }
+  .dynamic-grid .active .grid-img {
+    width: 120%; }
 
 /*-----  End of CUSTOM PARTIALS  ------*/

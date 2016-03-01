@@ -7,7 +7,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    rootBower = 'src/bower-components/'
+    rootBower = 'src/bower-components/',
+    rootCustom = 'src/js/'
 
 // sass task
 // compile
@@ -48,7 +49,13 @@ gulp.task('scriptsVendor', function() {
 // uglifies
 // rename with .min
 gulp.task('scriptsCust', function() {
-    gulp.src('src/js/*.js')
+    gulp.src(
+        [
+            // rootCustom + 'app.js'
+            rootCustom + 'module.js',
+            rootCustom + 'service.js',
+            rootCustom + 'ctrl.js'
+        ])
         .pipe(plumber())
          // uncomment for production
          // .pipe(uglify())
